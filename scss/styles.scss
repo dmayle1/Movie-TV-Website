@@ -1,0 +1,72 @@
+$main: #252529;
+$secondary: #8b8b9f;
+$highlight:	#73e298;
+$white: #FFFFFF;
+
+/* Will prevent padding from affecting the width of our columns */
+* {
+	box-sizing: border-box;
+}
+
+
+html, body {
+	font-family: 'Open Sans',sans-serf;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+/*Prevents floating elements on either side.*/
+.clearfix:after {
+	clear: both;
+}
+
+
+.wrapper {
+	width: 1440px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
+/* Header */
+
+#top_header {
+	padding: 1.5em 0;
+	.logo {
+		float: left;
+		text-transform: uppercase;
+		font-size: 1.15em;
+		font-weight: 700;
+		span {
+			font-weight: 300;
+			color: $highlight;
+		}
+	}
+	#main_nav {
+		float: right;
+		font-size: .9em;
+		padding-top: 1em;
+		a {
+			color: $secondary;
+			text-decoration: none;
+			margin-left: 1em;
+		}
+	}
+}
+
+ #banner {
+    background: url(../images/banner_background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	padding: 6.5em, 0;
+}
+
+
+
